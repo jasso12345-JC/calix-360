@@ -828,3 +828,43 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+/* =========================================
+   DISEÑO CALIXTLAHUACA - NIVEL PRADO
+   ========================================= */
+
+/* 1. Barra de Título Superior */
+#titleBar {
+    background-color: rgba(44, 30, 22, 0.9) !important; /* Marrón tierra oscuro casi opaco */
+    border-bottom: 2px solid #C6A664; /* Línea de acento dorado/cobre */
+}
+
+.sceneName {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* 2. Ventana de Información (La Ficha Técnica) */
+.info-hotspot-header {
+    background-color: #3e2723 !important; /* Café arqueológico oscuro */
+    border-radius: 8px 8px 0 0 !important; /* Bordes suaves arriba */
+    border-bottom: 2px solid #C6A664;
+}
+
+.info-hotspot-title {
+    font-family: 'Playfair Display', serif !important; /* Letra de título de museo */
+    font-size: 22px !important;
+    color: #f5f5f0 !important; /* Blanco hueso */
+}
+
+.info-hotspot-text {
+    background-color: #f8f6f0 !important; /* Fondo color papel amate/piedra clara */
+    color: #2b2b2b !important; /* Texto oscuro para lectura descansada */
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    border-radius: 0 0 8px 8px !important; /* Bordes suaves abajo */
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.6) !important; /* Sombra elegante */
+}

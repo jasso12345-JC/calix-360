@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-laon_cathedral_interior_360x180_picardy_france_-_diliff",
-      "name": "Laon_Cathedral_Interior_360x180,_Picardy,_France_-_Diliff",
+      "name": "zona Arqueologica de Calixtlahuaca",
       "levels": [
         {
           "tileSize": 256,
