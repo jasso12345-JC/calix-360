@@ -74,6 +74,7 @@ body, html {
 .hero-section {
     height: 100vh;
 background-image: url('img/hero-calixtlahuaca.png');
+background-attachment: fixed;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -274,16 +275,42 @@ p {
 /* =========================================
    OPTIMIZACIÓN PARA CELULARES (RESPONSIVE)
    ========================================= */
+/* =========================================
+   OPTIMIZACIÓN PARA CELULARES (RESPONSIVE)
+   ========================================= */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 15px;
-        gap: 15px;
-        background-color: rgba(30, 20, 15, 0.9); /* Fondo oscuro para que se lea en móvil */
+        padding: 20px 15px;
+        background-color: rgba(30, 20, 15, 0.95); /* Fondo oscuro más sólido */
+    }
+    
+    .logo-nav {
+        margin-bottom: 15px; /* Espacio debajo del logo */
+        text-align: center;
     }
 
+    /* NUEVO: Obligamos a los enlaces a apilarse en vertical */
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Letra un poco más grande para tocar con el dedo */
+    }
+
+    /* Arreglamos el botón deformado */
+    .nav-btn {
+        display: inline-block;
+        white-space: nowrap; /* Evita que el texto del botón se parta en dos líneas */
+        width: auto;
+    }
+    
     .hero-title {
-        font-size: 2.8rem; /* Letra más pequeña para el título */
+        font-size: 2.8rem;
         letter-spacing: 2px;
     }
 
@@ -292,8 +319,8 @@ p {
         padding: 0 15px;
     }
 
-    .info-section {
-        padding: 50px 20px; /* Menos espacio a los lados */
-        flex-direction: column; /* Apila el texto y el mapa */
+    .info-section, .academic-content {
+        padding: 50px 20px;
+        flex-direction: column;
     }
 }

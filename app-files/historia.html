@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Historia y Descubrimiento | Calixtlahuaca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lobby.css">
+    <link rel="stylesheet" href="lobby.css">
+
+    <style>
+        /* Estilos de Diseño Editorial Premium */
+        .editorial-figure {
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .editorial-figure img {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+        }
+        .editorial-figure figcaption {
+            font-size: 0.9rem;
+            color: #777;
+            font-style: italic;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* En pantallas grandes (PC), la imagen flota a la derecha */
+        @media (min-width: 992px) {
+            .editorial-figure {
+                width: 400px;
+                float: right;
+                margin-left: 30px;
+                margin-top: -10px; 
+            }
+        }
+        /* Estilos de la Audio-Guía */
+        .audio-guide-box {
+            background-color: #fff;
+            border-left: 4px solid #C6A664; /* Línea dorada arqueológica */
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            display: inline-block; /* Para que no ocupe todo el ancho si no es necesario */
+        }
+        .audio-title {
+            margin: 0 0 10px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #3e2723;
+            font-size: 0.95rem;
+        }
+        .custom-audio {
+            height: 35px;
+            outline: none;
+        }
+        .audio-hint {
+            margin: 8px 0 0 0;
+            font-size: 0.8rem;
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" style="background-color: #1e140f;">
+        <div class="logo-nav"><img src="img/logo-ehecatl.png" alt="Ehécatl" style="height: 40px; margin-right: 10px; vertical-align: middle;">Calixtlahuaca <span>360</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html" style="color: #C6A664;">Historia del Proyecto</a></li>
+            <li><a href="recorrido.html" class="nav-btn">Ver Recorrido</a></li>
+        </ul>
+    </nav>
+
+    <header class="history-header">
+        <h1>Bases Académicas y Descubrimiento</h1>
+        <p style="color: #C6A664; font-size: 1.2rem;">Proyecto de Intervención Pedagógica - Escuela Normal Superior</p>
+    </header>
+
+    <section class="academic-content">
+        <h2>El Descubrimiento de Calixtlahuaca</h2>
+        <figure class="editorial-figure">
+            <img src="img/excavacion-historica.jpg" alt="Fotografía histórica de la excavación en Calixtlahuaca, años 30">
+            <figcaption>Fotografía de archivo de la excavación del Templo de Ehécatl bajo la dirección del arqueólogo José García Payón (Aprox. 1930). Cortesía: Proyecto Virtual.</figcaption>
+        </figure>
+        <p>Aquí puedes redactar cómo fue descubierta la zona, el papel del arqueólogo José García Payón en los años 30, y la importancia estratégica del sitio en el Valle de Toluca durante la dominación mexica.</p>
+        <div class="audio-guide-box">
+            <p class="audio-title">🎧 Audio-Guía: El Descubrimiento</p>
+            <audio controls class="custom-audio">
+                <source src="https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" type="audio/ogg">
+                Tu navegador no soporta el reproductor de audio.
+            </audio>
+            <p class="audio-hint">Presiona "Play" para escuchar la narración pedagógica.</p>
+        </div>
+        
+        <h2>Justificación del Proyecto Virtual</h2>
+        <p>Este recorrido de 360 grados nace como una respuesta a la necesidad de crear herramientas didácticas modernas para la educación. Al llevar el museo al entorno digital, superamos las barreras geográficas y fomentamos una preservación interactiva del patrimonio matlatzinca...</p>
+
+        <h2>Ubicación Geográfica</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15061.026117364177!2d-99.6953932!3d19.3170796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8bd0538a0f0d%3A0x6d9e0cf5f168f237!2sZona%20Arqueol%C3%B3gica%20de%20Calixtlahuaca!5e0!3m2!1ses!2smx" width="100%" height="400" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+</body>
+</html>
