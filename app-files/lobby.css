@@ -501,3 +501,26 @@ p {
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
 }
+/* 1. Ampliamos el contenedor principal */
+.editorial-grid-section.justificacion-teorica {
+    display: block !important; 
+    width: 100%;
+    max-width: 1200px; /* Aumentamos de 900px a 1200px para pantallas anchas */
+    margin: 4rem auto; 
+    padding: 0 2rem;
+}
+
+/* 2. Ajuste de legibilidad (Micro-tipografía) */
+.justificacion-teorica .text-block p,
+.justificacion-teorica .text-block li {
+    font-size: 1.1rem; /* Letra ligeramente más grande */
+    line-height: 1.8; /* Interlineado amplio para lectura en pantalla */
+    color: var(--color-texto, #333);
+    margin-bottom: 1rem;
+}
+/* 3. Separación rítmica entre bloques conceptuales */
+.justificacion-teorica .text-block + * {
+    margin-top: 4rem; /* Empuja la siguiente sección hacia abajo */
+    border-top: 1px solid var(--color-dorado); /* Línea sutil de separación */
+    padding-top: 3rem;
+}
