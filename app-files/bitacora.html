@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora de Desarrollo | Calixtlahuaca 360</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="lobby.css">
+</head>
+<body>
+
+    <nav class="navbar" style="background-color: var(--fondo-sepia-oscuro);">
+        <div class="logo-nav">
+            <img src="img/logo-ehecatl.png" alt="Ehécatl">Calixtlahuaca <span>360</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="bitacora.html" style="color: var(--dorado);">Bitácora</a></li>
+            <li><a href="recorrido.html" class="nav-btn">Ver Recorrido</a></li>
+        </ul>
+    </nav>
+
+    <header class="history-header" style="background-image: url('img/textura-barro.jpg'); margin-top: 80px;">
+        <div class="header-overlay">
+            <h1>Bitácora de Desarrollo</h1>
+            <p class="subtitle-pedagogico">Memoria Teórica y Técnica del Proyecto</p>
+        </div>
+    </header>
+
+    <main class="editorial-container">
+        <article class="editorial-grid-section justificacion-teorica">
+    <div class="text-block">
+        <h2 class="capitular-title">Memoria Técnica y Pedagógica: Proyecto Calixtlahuaca 360</h2>
+        <hr class="separator-gold">
+        <section class="qa-block">
+            <h3>1. ¿Qué es un modelo multimodal y cuáles son sus partes?</h3>
+            <p>Un modelo multimodal es una forma de comunicación y aprendizaje que no se limita al texto escrito, sino que combina diferentes "modos" o lenguajes al mismo tiempo para transmitir un mensaje más completo. En lugar de solo leer, el usuario experimenta la información.</p>
+            <p>Las partes que conforman este modelo en el proyecto son:</p>
+            <ul>
+                <li><strong>Visual y Espacial:</strong> Las fotografías en 360 grados del sitio arqueológico, los colores, la tipografía y el diseño estricto de la página (<code>lobby.css</code>).</li>
+                <li><strong>Textual:</strong> La información escrita sobre la historia prehispánica, presentada en bloques digeribles y ventanas modales.</li>
+                <li><strong>Auditivo:</strong> El reproductor de audio integrado que acompaña el recorrido para generar inmersión.</li>
+                <li><strong>Interactivo:</strong> La capacidad del usuario para moverse por el entorno virtual, interactuar con el DOM mediante Vanilla JS y explorar a su propio ritmo.</li>
+            </ul>
+        </section>
+
+        <section class="qa-block">
+            <h3>2. En el ámbito educativo ¿Pueden emplearse? ¿Y en este proyecto?</h3>
+            <p>Sí, son altamente efectivos en la educación actual porque responden a la forma en que los estudiantes consumen información. En el proyecto Calixtlahuaca 360, el modelo multimodal es la base estructural. Se emplea para romper con la enseñanza tradicional de la historia. Aquí, el estudiante navega por el espacio del museo y el sitio arqueológico, convirtiendo el aprendizaje en una experiencia activa y de descubrimiento, alineándose con el enfoque de la Nueva Escuela Mexicana (NEM).</p>
+        </section>
+
+        <section class="qa-block">
+            <h3>3. ¿Será este modelo el próximo paso para el proceso de EA? ¿Qué opino?</h3>
+            <p>Es una herramienta poderosa para el futuro del proceso de Enseñanza-Aprendizaje (EA), pero no es una solución mágica. Si usamos la tecnología solo para mostrar un texto plano dentro de una pantalla 360, seguimos reproduciendo un modelo enciclopédico pasivo. Para que realmente sea un paso evolutivo, debe combinarse con metodologías como el <strong>Aprendizaje Basado en Problemas (ABP)</strong>. La tecnología debe servir para que el alumno genere disonancia cognitiva, investigue y desarrolle pensamiento crítico.</p>
+        </section>
+
+        <section class="qa-block">
+            <h3>4. Autodiagnóstico: ¿Qué sé y qué debo aprender?</h3>
+            <p><strong>Lo que sé:</strong> Existe un dominio práctico en la creación de arquitecturas web semánticas (HTML5/CSS3), el diseño de la plataforma y el flujo de trabajo de virtualización (captura fotográfica, ensamble en Hugin y proyecciones). A nivel teórico, hay un entendimiento claro de la Interculturalidad Crítica y la NEM.</p>
+            <p><strong>Lo que debo aprender:</strong> El reto principal radica en la intersección técnico-pedagógica. Necesito aprender a programar las interacciones (hotspots en Marzipano) para que no sean simples resúmenes de museo, sino verdaderos detonadores de curiosidad y análisis crítico que sostengan el modelo ABP.</p>
+        </section>
+
+        <section class="qa-block">
+            <h3>5. ¿Cómo lo pondré en práctica y cuál es la intención?</h3>
+            <p>Se pondrá en práctica aislando el motor inmersivo en su propio entorno (<code>recorrido.html</code>) para mantener la estabilidad del Lobby, inyectando narrativas en los puntos de interés mediante JavaScript.</p>
+            <p>La intención teleológica del proyecto es la <strong>democratización del patrimonio histórico</strong>. El objetivo no es crear un escaparate virtual, sino acercar la historia de Calixtlahuaca a la comunidad. Buscamos que los estudiantes reconozcan la herencia prehispánica del Valle de Toluca como parte viva de su identidad, utilizando la tecnología como un medio emancipador y no como un fin en sí mismo.</p>
+        </section>
+
+    </div>
+</article>
+        <section class="academic-section discovery-grid">
+            <div class="text-block">
+                <h2 class="section-title">1. El Modelo Educativo (NEM)</h2>
+                <p class="main-text">
+                    La intervención pedagógica de <strong>Calixtlahuaca 360</strong> se fundamenta en la **Nueva Escuela Mexicana**, aplicando el proceso de <strong>Codiseño</strong> y Contextualización (Planos Analíticos 2 y 3). El proyecto surge de una "lectura de la realidad" que detectó la desconexión identitaria de los alumnos con su patrimonio local. 
+                </p>
+                <p class="main-text" style="margin-top: 15px;">
+                    Se implementa la metodología de **Aprendizaje Basado en Problemas (ABP)** dentro del campo formativo <em>Ética, Naturaleza y Sociedades</em>. El museo virtual es la herramienta crítica para que el estudiante indague, apropie su cultura y ejerza un pensamiento intercultural crítico sobre el legado Matlatzinca.
+                </p>
+            </div>
+
+            <figure class="editorial-figure">
+                <img src="img/textura-piedra.jpg" alt="Iconografía Pedagógica ABP">
+                <figcaption>Esquema de aplicación de los Momentos del ABP: Indagación, Organización y Vivencia de la Experiencia Virtual.</figcaption>
+            </figure>
+        </section>
+
+        <hr class="separator-gold" style="border: 0; height: 1px; background-image: linear-gradient(to right, transparent, var(--dorado), transparent); margin: 50px 0;">
+
+        <section class="academic-section">
+            <div class="nem-justification-card">
+                <h2 class="section-title" style="border-left: none; padding-left: 0; border-bottom: 2px solid var(--dorado); padding-bottom: 10px; display: inline-block;">
+                    2. Desarrollo Web (Frontend)
+                </h2>
+                <p class="nem-description">
+                    El entorno virtual ha sido programado utilizando **HTML5 Semántico** para la estructura, **CSS3 Avanzado** (Flexbox, Grid y Variables :root) para el diseño responsivo, y **JavaScript Vanilla** para la interactividad de las ventanas modales. 
+                </p>
+                <p class="nem-description">
+                    Se aplicó un **Reseteo Global de Caja** (`box-sizing: border-box`) y un estricto control de desbordamiento (`overflow-x: hidden`) en el `body`, resolviendo los errores críticos de scroll horizontal y garantizando la estabilidad visual del sitio en computadoras y dispositivos móviles.
+                </p>
+                <div class="ejes-container">
+                    <span class="badge"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="badge"><i class="fab fa-js"></i> JS Vanilla</span>
+                    <span class="badge"><i class="fas fa-mobile-alt"></i> Responsivo</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="academic-section discovery-grid" style="margin-top: 80px;">
+             <figure class="editorial-figure">
+                <img src="img/textura-estuco.jpg" alt="Proceso de Captura 360">
+                <figcaption>Flujo de trabajo: Captura Raw -> Cosido (Hugin) -> Renderizado (Marzipano).</figcaption>
+            </figure>
+
+            <div class="text-block">
+                <h2 class="section-title">3. El Visor Inmersivo</h2>
+                <p class="main-text">
+                    La experiencia 360 se basa en la librería **Marzipano**, un motor de renderizado de panorámicas de alto rendimiento. El proceso técnico incluyó la captura fotográfica en bruto (RAW) en el sitio arqueológico, el cosido de imágenes (stitching) para crear equirrectangulares perfectas, y la programación de la lógica en `recorrido.html` para la visualización e interactividad de los puntos de interés.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="museum-footer">
+        <div class="footer-content">
+            <h3>Proyecto de Virtualización Arqueológica</h3>
+            <p>Desarrollado por Rodolfo Jasso - Escuela Normal Superior del Estado de México</p>
+        </div>
+    </footer>
+</body>
+</html>

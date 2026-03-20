@@ -226,17 +226,17 @@ p {
     filter: brightness(0.85) contrast(1.1);
 }
 
-/* Clases corregidas (fuera de anidación) */
-.placeholder-1 { background-image: url('img/textura-piedra.jpg'); background-color: #5d4037; }
-.placeholder-2 { background-image: url('img/textura-estuco.jpg'); background-color: #795548; }
-.placeholder-3 { background-image: url('img/textura-barro.jpg'); background-color: #8d6e63; }
+/* Busca estas clases en tu CSS y actualiza la ruta (Línea 150 aprox) */
+.placeholder-1 { background-image: url('img/ia-templo.jpg'); background-color: #5d4037; }
+.placeholder-2 { background-image: url('img/ia-tzompantli.jpg'); background-color: #795548; }
+.placeholder-3 { background-image: url('img/ia-ceramica.jpg'); background-color: #8d6e63; }
 
 .card-info { padding: 20px; text-align: left; }
 .card-info h3 { margin: 0 0 10px 0; font-family: 'Playfair Display', serif; color: var(--texto-oscuro); }
 .card-info p { margin: 0; font-size: 0.9rem; color: #555; }
 
 /* =========================================
-   6. VENTANA MODAL (GLOSARIO / ARTEFACTOS)
+   7. VENTANA MODAL (GLOSARIO / ARTEFACTOS)
    ========================================= */
 .modal {
     display: none;
@@ -284,7 +284,7 @@ p {
 .modal-info p { font-size: 1rem; line-height: 1.6; color: #555; }
 
 /* =========================================
-   7. DISEÑO EDITORIAL (HISTORIA.HTML & NEM)
+   8. DISEÑO EDITORIAL (HISTORIA.HTML & NEM)
    ========================================= */
 .history-header {
     height: 40vh;
@@ -365,4 +365,139 @@ p {
     
     .header-overlay h1 { font-size: 2rem; }
     .nem-justification-card { padding: 30px 20px; }
+}
+/* --- NUEVO DISEÑO EDITORIAL DINÁMICO HISTORIA --- */
+
+/* Contenedor principal de la sección */
+.editorial-grid-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    /* Dos columnas: una más estrecha para la imagen, otra para el texto */
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* Columna Visual */
+.editorial-visual-column {
+    position: sticky; /* La imagen baja con el scroll, ¡muy dinámico! */
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* La imagen Larga (Portrait) que propusiste */
+.editorial-long-figure {
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.editorial-long-figure img {
+    width: 100%;
+    /* Asegúrate de que tu nueva imagen sea vertical (portrait) */
+    height: auto;
+    max-height: 700px; /* Limitamos la altura máxima */
+    object-fit: cover; /* Recorta si es necesario sin deformar */
+    border-radius: 2px;
+}
+
+.editorial-long-figure figcaption {
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Caja de audio estilizada para esta columna */
+.visual-audio-box {
+    margin: 0;
+}
+
+/* Columna de Texto */
+.editorial-text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Subtítulos temáticos para romper el texto */
+.sub-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--fondo-sepia-oscuro);
+    border-left: 4px solid var(--dorado);
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+/* Párrafos más pequeños y legibles */
+.readable-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+/* Toque de Letra Capitular para el inicio */
+.editorial-text-column .readable-paragraph:first-of-type::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: var(--dorado);
+    float: left;
+    line-height: 1;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+/* Responsive para Móviles: Pasamos a una sola columna */
+@media (max-width: 991px) {
+    .editorial-grid-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .editorial-visual-column {
+        position: static; /* Quitamos el sticky en móvil */
+        order: -1; /* La foto sube arriba del texto en móvil */
+    }
+}
+/* =========================================
+   8. DISEÑO EDITORIAL (Refinamientos)
+   ========================================= */
+
+/* Refuerzo de Letra Capitular (Más grande y dramática) */
+.editorial-text-column .readable-paragraph:first-of-type::first-letter {
+    font-size: 5rem; 
+    font-weight: bold;
+    color: var(--dorado);
+    margin-right: 15px;
+    line-height: 0.8; 
+}
+
+/* Refinamiento del Separador Dorado (Estilo orfebre) */
+.separator-gold {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, var(--dorado) 20%, var(--dorado) 80%, transparent);
+    position: relative;
+    margin: 80px 0; 
+}
+
+.separator-gold::after {
+    content: "◈"; 
+    color: var(--dorado);
+    background-color: var(--fondo-claro);
+    padding: 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
 }

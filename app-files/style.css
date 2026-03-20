@@ -868,3 +868,25 @@ body.view-control-buttons .viewControlButton {
     border-radius: 0 0 8px 8px !important; /* Bordes suaves abajo */
     box-shadow: 0px 10px 25px rgba(0,0,0,0.6) !important; /* Sombra elegante */
 }
+/* =========================================
+   AJUSTES ESPECÍFICOS: BITÁCORA (TEXTO COMPLETO)
+   ========================================= */
+.editorial-grid-section.justificacion-teorica {
+    display: block; /* Anula el grid de dos columnas para esta sección específica */
+    max-width: 800px; /* Ancho máximo de lectura editorial */
+    margin: 0 auto; /* Centra el bloque en la pantalla */
+    padding: 2rem 1rem;
+}
+
+.justificacion-teorica .text-block {
+    width: 100%;
+}
+
+.qa-block {
+    margin-bottom: 2.5rem; /* Da respiro entre cada pregunta y respuesta */
+}
+
+.qa-block h3 {
+    color: var(--color-dorado); /* Usa tu variable de color para jerarquía visual */
+    margin-bottom: 1rem;
+}
